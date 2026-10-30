@@ -1,9 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  cacheComponents: true,
-  partialPrefetching: true,
+  // Dynamic Ollama chat — avoid Cache Components constraints on route handlers
   turbopack: {
     rules: {
       "*.css": {
